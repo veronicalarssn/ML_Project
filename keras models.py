@@ -17,26 +17,26 @@ from keras.models import Sequential
 # In[ ]:
 
 
-pip install torch torchvision
+#pip install torch torchvision
 
 
 # In[ ]:
 
 
-pip install tensorflow
+#pip install tensorflow
 
 
 # In[2]:
 
 
 #Re-Load the dataset
-loaded_data = np.load("my_dataset_aug_full.npz", allow_pickle=True)
+#loaded_data = np.load("my_dataset_aug_full.npz", allow_pickle=True)
+# # Access images and labels
+# loaded_images = loaded_data['images']
 
-# Access images and labels
-loaded_images = loaded_data['images']
-
-# Now you can use loaded_images and loaded_labels in your code
-image_df=pd.DataFrame(loaded_images)
+# # Now you can use loaded_images and loaded_labels in your code
+# image_df=pd.DataFrame(loaded_images)
+image_df = pd.read_csv("/Users/veronicalarsson/Downloads/model_data.csv")
 image_df.head()
 
 
